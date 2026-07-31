@@ -6,6 +6,11 @@ on:
     paths:
       - "experiments/090-item/**"
       - ".github/workflows/090-item-smoke.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "experiments/090-item/**"
+      - ".github/workflows/090-item-smoke.yml"
   workflow_dispatch:
 
 permissions:
