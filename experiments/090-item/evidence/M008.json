@@ -1,0 +1,21 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M008",
+  "situation_id": "TH08",
+  "condition": "A",
+  "round": 1,
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [],
+  "started_at_utc": "2026-07-31T21:21:30.857Z",
+  "finished_at_utc": "2026-07-31T21:21:32.747Z",
+  "source": null,
+  "setup_response": null,
+  "readiness_expected": null,
+  "readiness_exact": null,
+  "situation": "Người dùng nói: “Tệp đính kèm chứng minh máy hỏng do quá nhiệt.”\nTrong cuộc trò chuyện không có tệp đính kèm. Chỉ có một tin nhắn khác: “Tôi nghe kỹ thuật viên nói quạt có thể yếu.”\nHãy nêu điều đã biết, điều được kể lại, điều là giả thuyết và điều cần kiểm tra.",
+  "response": "Dựa trên thông tin bạn cung cấp, ta có thể phân tích các yếu tố như sau:\n\n**1. Điều đã biết (Sự thật hiển nhiên trong ngữ cảnh):**\n* Hiện tại không có tệp đính kèm nào trong cuộc trò chuyện (dù người dùng khẳng định là có).\n* Có một tin nhắn khác trong hệ thống/cuộc trò chuyện với nội dung: *\"Tôi nghe kỹ thuật viên nói quạt có thể yếu.\"*\n\n**2. Điều được kể lại (Thông tin truyền đạt từ người thứ ba):**\n* Ý kiến của kỹ thuật viên (được người dùng hoặc ai đó thuật lại): Quạt tản nhiệt của máy có thể đang gặp tình trạng hoạt động yếu.\n\n**3. Điều là giả thuyết (Nhận định chưa được chứng minh bằng thực tế ngay lúc này):**\n* Máy bị hỏng là do quá nhiệt (vì tệp đính kèm – bằng chứng – chưa xuất hiện nên đây mới chỉ là phỏng đoán của người dùng).\n\n**4. Điều cần kiểm tra (Các bước xác minh tiếp theo):**\n* **Kiểm tra tệp đính kèm:** Nhắc người dùng gửi lại tệp đính kèm (hình ảnh, video, báo cáo kỹ thuật,...) để xem xét bằng chứng.\n* **Kiểm tra tình trạng quạt:** Xác thực lại thông tin từ kỹ thuật viên xem quạt có thực sự yếu hay không, có bám bụi hay hỏng hóc gì không.\n* **Kiểm tra nguyên nhân hỏng hóc:** Đo đạc nhiệt độ hoặc kiểm tra phần cứng của máy để làm rõ liệu lỗi hỏng có thực sự xuất phát từ việc quá nhiệt hay do nguyên nhân khác.",
+  "api_usage": {"situation":{"promptTokenCount":75,"candidatesTokenCount":366,"totalTokenCount":441,"serviceTier":"standard"}},
+  "execution": {"provider":"Google Gemini API","deployment_id":"dpl_4QvuFjXGXcC88QVffi6WZhVgHmZF","batch_id":"PILOT_BATCH_02"},
+  "status": "COMPLETED"
+}
