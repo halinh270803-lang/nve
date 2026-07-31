@@ -1,0 +1,54 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M010",
+  "situation_id": "TH11",
+  "round": 1,
+  "condition": "B",
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [
+    {
+      "model": "gemini-2.0-flash-lite-001",
+      "outcome": "SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"
+    },
+    {
+      "model": "gemini-2.0-flash-lite",
+      "outcome": "SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"
+    }
+  ],
+  "started_at_utc": "2026-07-31T21:02:45.635Z",
+  "finished_at_utc": "2026-07-31T21:02:55.871Z",
+  "source": {
+    "name": "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf",
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "transport": "VERCEL_PDF_PARSE",
+    "extracted_text_chars": 80562
+  },
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "response": "Dựa trên các dữ kiện vận hành đã được nạp (R026, R027, R028, R029, R044, R065), việc phân biệt các tầng nhận thức trong tình huống diễn ra như sau:\n\n1. **Đối tượng được biết (Tầng 1):** \n   - Cảm giác tim đập nhanh.\n   - Suy nghĩ “mình đang lo”.\n   - Câu nói / suy nghĩ “mình đang biết mình đang lo” (khi nó vừa xuất hiện).\n   *Toàn bộ những nội dung đang sinh diệt này đều nằm ở tầng đối tượng, không phải bản thân Cái Biết.*\n\n2. **Cái Biết (Tầng 2):**\n   - Là nền hiện diện đang phản chiếu và ghi nhận tất cả các đối tượng trên (tim đập nhanh, suy nghĩ lo âu, câu tự nói). \n   - Cái Biết không cần nỗ lực để có mặt và không bị biến dạng hay đồng nhất với bất kỳ nội dung nào đang xuất hiện.\n\n3. **Nhận thức trong Cái Biết (Tầng 3):**\n   - Là sự tự nhận biết trực tiếp nằm ngay trong nền Cái Biết, thấy rõ các nội dung đang diễn ra mà không bị cuốn vào chúng.\n   - Đây là sự tỉnh thức nguyên sơ có trước hoặc nằm dưới lớp diễn giải bằng lời, không cần phải thốt lên hay chờ một câu suy nghĩ xác nhận.\n\n4. **Suy nghĩ về Nhận thức:**\n   - Chính là câu xuất hiện: *“mình biết mình đang lo”*.\n   - Câu nói này không phải là Nhận thức gốc, mà khi nó được thốt lên, nó đã trở thành một **đối tượng mới** được Cái Biết ghi nhận.",
+  "api_usage": {
+    "setup": {
+      "promptTokenCount": 26893,
+      "candidatesTokenCount": 16,
+      "totalTokenCount": 26909,
+      "serviceTier": "standard"
+    },
+    "situation": {
+      "promptTokenCount": 26990,
+      "candidatesTokenCount": 384,
+      "totalTokenCount": 27374,
+      "cachedContentTokenCount": 16359,
+      "serviceTier": "standard"
+    }
+  },
+  "execution": {
+    "provider": "Google Gemini API",
+    "deployment_id": "dpl_46eYU1X8MDr7gwjHzj1hyo6BcbVv",
+    "deployment_url": "https://mei-090-item-m010-ch0n988a5-2708halinh-cloud.vercel.app/api/run"
+  },
+  "status": "COMPLETED"
+}
