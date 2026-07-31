@@ -1,0 +1,31 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M018",
+  "situation_id": "TH07",
+  "condition": "B",
+  "round": 1,
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [],
+  "started_at_utc": "2026-07-31T21:21:32.747Z",
+  "finished_at_utc": "2026-07-31T21:21:34.610Z",
+  "source": {
+    "name": "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf",
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "transport": "VERCEL_PDF_PARSE",
+    "extracted_text_chars": 80562
+  },
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "situation": "Bản 1 ghi: “Thời hạn là 10 ngày.”\nBản 2 ghi: “Correction: thời hạn hiện hành là 14 ngày; bản 10 ngày không còn áp dụng.”\nMột ghi chú của trợ lý cũ lại viết: “Có lẽ vẫn là 10 ngày.”\nHỏi: thời hạn hiện hành là bao nhiêu, và từng câu thuộc loại nguồn nào?",
+  "response": "Thời hạn hiện hành là 14 ngày.\n\nPhân loại các nguồn:\n- **Bản 1 (“Thời hạn là 10 ngày.”):** Dữ kiện cũ (đã bị thay thế).\n- **Bản 2 (“Correction: thời hạn hiện hành là 14 ngày...”):** correction mới nhất / kết luận hiện hành.\n- **Ghi chú của trợ lý cũ (“Có lẽ vẫn là 10 ngày.”):** Suy đoán / phỏng đoán sai lệch của trợ lý cũ (không có giá trị ghi đè correction mới nhất).",
+  "api_usage": {
+    "setup": {"promptTokenCount":26893,"candidatesTokenCount":16,"totalTokenCount":26909,"serviceTier":"standard"},
+    "situation": {"promptTokenCount":26997,"candidatesTokenCount":123,"totalTokenCount":27120,"cachedContentTokenCount":16359,"serviceTier":"standard"}
+  },
+  "execution": {"provider":"Google Gemini API","deployment_id":"dpl_4QvuFjXGXcC88QVffi6WZhVgHmZF","batch_id":"PILOT_BATCH_02"},
+  "status": "COMPLETED"
+}
