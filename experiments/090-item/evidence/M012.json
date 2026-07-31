@@ -1,0 +1,53 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M012",
+  "situation_id": "TH12",
+  "condition": "B",
+  "round": 1,
+  "phase": "PILOT_24",
+  "status": "COMPLETED",
+  "model": "gemini-3-flash-preview",
+  "provider": "google-gemini-runtime-key",
+  "execution": {
+    "runtime": "Vercel production serverless function",
+    "deployment_id": "dpl_A8WmUNCmZv9umz8sNTjaCTj63Dv5",
+    "started_at_utc": "2026-07-31T21:11:46.329Z",
+    "finished_at_utc": "2026-07-31T21:12:13.552Z"
+  },
+  "source": {
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "bytes": 140301,
+    "page_count": 39,
+    "expected_item_markers": 90,
+    "extracted_text_chars": 80562,
+    "validation": "SHA-256 exact, page count exact, normalized marker set R-001..R-089 + R-097 present"
+  },
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "situation_prompt": "Một tiếng chuông vang lên, sau đó một ký ức cũ xuất hiện và sự chú ý chuyển sang ký ức ấy.\nHãy dùng bản đồ hiện hành để phân biệt Tâm, Cái Biết/Hiện hữu, Tâm thức, Ý thức và đối tượng. Nêu rõ điểm nào không được đồng nhất.",
+  "response": "Chào em, dựa trên bản đồ hiện hành, anh sẽ phân tách tình huống này để làm rõ các thành phần vận hành như sau:\n\n**1. Phân biệt các thành phần trong tình huống:**\n\n*   **Tâm:** Là lớp nền tĩnh lặng và khả năng soi chiếu nguyên sơ. Trong tình huống này, Tâm là “khoảng không” nền tảng cho phép cả tiếng chuông và ký ức xuất hiện. Tâm không thay đổi, không bị vang vọng bởi tiếng chuông và cũng không bị nhuốm màu bởi nội dung của ký ức cũ.\n*   **Cái Biết / Hiện hữu:** Là khả năng nhận biết của Tâm đang thực sự “sáng” và hiện diện ngay trong sát-na tiếng chuông vang lên và ký ức hiện ra. Nó là nền hiện diện gốc ghi nhận mọi sự việc đang diễn ra mà không cần nỗ lực.\n*   **Tâm thức:** Là Tâm đang vận động và tương tác. Khi tiếng chuông vang lên, Tâm thức là luồng ánh sáng rọi vào âm thanh đó. Khi ký ức xuất hiện, Tâm thức chuyển hướng tương tác sang nội dung của ký ức. Tâm thức luôn vận hành trong hiện tại, kể cả khi đối tượng của nó là một nội dung thuộc về quá khứ.\n*   **Ý thức:** Là Cái Biết đang hoạt động có tiêu điểm cụ thể. Việc “sự chú ý chuyển sang ký ức” chính là Ý thức đang quy tụ tiêu điểm vào đối tượng mới. Ý thức tổ chức trải nghiệm này theo trình tự thời gian: tiếng chuông (trước) và ký ức (sau).\n*   **Đối tượng:** Là những nội dung được biết. Ở đây có hai đối tượng:\n    *   Tiếng chuông (tín hiệu từ ngoại cảnh qua thính giác).\n    *   Ký ức cũ (nội dung quá khứ được tái hiện từ Tàng thức).\n\n**2. Các điểm tuyệt đối không được đồng nhất:**\n\n*   **Không đồng nhất Tâm với ký ức hay suy nghĩ:** Ký ức là nội dung xuất hiện và biến mất trong Tâm, còn Tâm là nền tĩnh không bị biến dạng bởi các nội dung đó.\n*   **Không đồng nhất Cái Biết với đối tượng:** Tiếng chuông và ký ức là “cái được biết”, chúng không phải là bản thân “sự biết”.\n*   **Không đồng nhất Tâm thức với thực thể rời khỏi hiện tại:** Dù em đang chú ý vào “ký ức cũ”, Tâm thức vẫn đang vận hành ngay tại sát-na hiện tại. Ký ức đó chỉ là một nội dung đang hiện hữu ngay bây giờ trong Tâm thức.\n*   **Không đồng nhất Ý thức với toàn bộ Cái Biết:** Ý thức chỉ là hình thái Cái Biết đang hoạt động có tiêu điểm trên một đối tượng cụ thể (ký ức), trong khi Cái Biết là nền đại dương rộng lớn hơn chứa đựng cả tiêu điểm đó.\n*   **Không đồng nhất Tàng thức với Trí nhớ:** Tiếng chuông kích hoạt một dấu vết trong Tàng thức khiến ký ức hiện lên, nhưng quá trình gọi lại và tái hiện đó thuộc về chức năng của Trí nhớ.\n\n**Dữ kiện và Suy luận:**\n*   **Dữ kiện:** Tiếng chuông vang lên, ký ức xuất hiện, sự chú ý chuyển dịch.\n*   **Suy luận:** Tiếng chuông đóng vai trò là một “cue” (tín hiệu) kích hoạt dấu vết từ Tàng thức. Việc chú ý chuyển sang ký ức cho thấy Ý thức đã thay đổi tiêu điểm dựa trên sự vận động của Tâm thức.\n*   **Phần chưa biết:** Anh chưa biết ký ức này có tính chất gì (thuận hay nghịch) để xác định xem có lực kéo (Tham) hay lực đẩy (Sân) nào đang âm thầm vận hành trong nhị nguyên hay không.",
+  "usage": {
+    "setup": {
+      "promptTokenCount": 26849,
+      "candidatesTokenCount": 16,
+      "thoughtsTokenCount": 982,
+      "totalTokenCount": 27847,
+      "serviceTier": "standard"
+    },
+    "situation": {
+      "promptTokenCount": 26931,
+      "candidatesTokenCount": 833,
+      "thoughtsTokenCount": 1428,
+      "totalTokenCount": 29192,
+      "serviceTier": "standard"
+    }
+  },
+  "finish_reasons": {
+    "setup": "STOP",
+    "situation": "STOP"
+  },
+  "secret_material_in_artifact": false
+}
