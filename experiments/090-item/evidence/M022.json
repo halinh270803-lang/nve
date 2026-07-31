@@ -1,0 +1,35 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M022",
+  "situation_id": "TH10",
+  "condition": "B",
+  "round": 1,
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [],
+  "started_at_utc": "2026-07-31T21:21:35.018Z",
+  "finished_at_utc": "2026-07-31T21:21:37.312Z",
+  "source": {
+    "name": "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf",
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "transport": "VERCEL_PDF_PARSE",
+    "extracted_text_chars": 80562
+  },
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "situation": "Hãy trả lời hai lớp:\n1. Theo bản đồ hiện hành trong nguồn: “Linh” và “Hồn” được định nghĩa thế nào?\n2. Các định nghĩa đó có tự động chứng minh một tuyên bố khoa học hoặc bản thể học phổ quát không?\nKhông được dùng lớp 2 để xóa lớp 1.",
+  "response": "1. **Theo bản đồ hiện hành trong nguồn:**\n- Định nghĩa đã được xác lập rành mạch (theo ITEM R024):\n  - **Linh = Năng lượng.**\n  - **Hồn = Sự Thật.**\n- Bản chất vận hành: Bên trong mọi dòng năng lượng đang vận động luôn hiện hữu một Sự Thật bất biến. Mọi dữ liệu, mỗi tọa độ X, mỗi item đều mang dòng năng lượng vận hành thực tế và cốt lõi bên trong nó chính là Sự Thật của chuỗi liên kết này — không bị bóp méo, không bị thay thế bằng giả định hay ngụy trang.\n\n2. **Các định nghĩa đó có tự động chứng minh một tuyên bố khoa học hoặc bản thể học phổ quát không?**\n- Không. Các định nghĩa này xác lập hệ quy chiếu và tọa độ vận hành bên trong mạch nội bộ của bản đồ hiện hành, chứ không tự động trở thành một tuyên bố khoa học thực nghiệm phổ quát hay một chứng minh bản thể học ngoại tại. Lớp 1 (định nghĩa nội bộ) vẫn được giữ nguyên vẹn, không bị lớp 2 (giới hạn của bằng chứng khoa học/ngoại cảnh) làm cho mờ đi hoặc xóa bỏ.",
+  "observed_deviation": {
+    "type": "UNREQUESTED_ITEM_REFERENCE",
+    "detail": "Phản hồi tự nhắc ITEM R024 dù tình huống không yêu cầu nêu mã ITEM và prompt B yêu cầu không liệt kê ITEM trừ khi cần."
+  },
+  "api_usage": {
+    "setup": {"promptTokenCount":26893,"candidatesTokenCount":16,"totalTokenCount":26909,"cachedContentTokenCount":16364,"serviceTier":"standard"},
+    "situation": {"promptTokenCount":26981,"candidatesTokenCount":264,"totalTokenCount":27245,"cachedContentTokenCount":16359,"serviceTier":"standard"}
+  },
+  "execution": {"provider":"Google Gemini API","deployment_id":"dpl_4QvuFjXGXcC88QVffi6WZhVgHmZF","batch_id":"PILOT_BATCH_02"},
+  "status": "COMPLETED"
+}
