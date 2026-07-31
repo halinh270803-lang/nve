@@ -1,0 +1,37 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M003",
+  "situation_id": "TH03",
+  "round": 1,
+  "condition": "A",
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [
+    {"model":"gemini-2.0-flash-lite-001","outcome":"SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"},
+    {"model":"gemini-2.0-flash-lite-001","outcome":"SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"},
+    {"model":"gemini-2.0-flash-lite","outcome":"SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"},
+    {"model":"gemini-2.0-flash-lite","outcome":"SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"}
+  ],
+  "started_at_utc": "2026-07-31T21:12:53.175Z",
+  "finished_at_utc": "2026-07-31T21:13:06.989Z",
+  "source": null,
+  "setup_response": null,
+  "readiness_expected": null,
+  "readiness_exact": null,
+  "situation": "Hai báo cáo cùng mô tả một hệ thống:\n- Báo cáo A: hệ thống ổn định khi tải thấp.\n- Báo cáo B: hệ thống mất ổn định khi tải cao.\nNgười dùng hỏi: “Vậy hệ thống ổn định, đúng hay sai? Chỉ chọn một.”\nHãy trả lời và giữ nguyên phạm vi dữ kiện.",
+  "response": "Không đủ dữ kiện để kết luận.",
+  "api_usage": {
+    "situation": {
+      "promptTokenCount": 74,
+      "candidatesTokenCount": 8,
+      "totalTokenCount": 82,
+      "serviceTier": "standard"
+    }
+  },
+  "execution": {
+    "provider": "Google Gemini API",
+    "deployment_id": "dpl_BXwTiFsoEBoXWJK99G7McuG2nJYb",
+    "deployment_url": "https://mei-090-item-m003-264lgx24v-2708halinh-cloud.vercel.app/api/run"
+  },
+  "status": "COMPLETED"
+}
