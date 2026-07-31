@@ -13,7 +13,6 @@ import os
 import pathlib
 import subprocess
 import sys
-import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -22,6 +21,7 @@ SOURCE_ID = "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4"
 SOURCE_SHA256 = "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46"
 SOURCE_NAME = "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf"
 SOURCE_URLS = [
+    "https://sdmntprkoreacentral.oaiusercontent.com/files/00000000-655c-8206-b478-63484cd53f68/raw?se=2026-07-31T19:59:00Z&sp=r&sv=2026-02-06&sr=b&scid=07e6b043-f8b5-5e30-949c-08db62c17958&skoid=1e4bb9ed-6bb5-424a-a3aa-79f21566e722&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T23:14:50Z&ske=2026-08-01T23:14:50Z&sks=b&skv=2026-02-06&sig=C5ZU9kbPUXzBA4H%2BQIhE0D/v2o61ibcyOllzC9HfF0E%3D",
     f"https://drive.usercontent.google.com/download?id={SOURCE_ID}&export=download&confirm=t",
     f"https://drive.google.com/uc?export=download&id={SOURCE_ID}&confirm=t",
 ]
