@@ -15,7 +15,6 @@ on:
 
 permissions:
   contents: read
-  models: read
   actions: read
 
 jobs:
@@ -25,9 +24,9 @@ jobs:
     timeout-minutes: 20
     env:
       SAMPLE_ID: M010
-      MODEL_ID: openai/gpt-4.1-mini
+      MODEL_ID: openrouter/free
       OUTPUT_DIR: output
-      GITHUB_TOKEN: ${{ github.token }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
