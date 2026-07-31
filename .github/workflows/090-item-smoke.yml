@@ -1,0 +1,52 @@
+name: 090 ITEM smoke M010
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "experiments/090-item/**"
+      - ".github/workflows/090-item-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  models: read
+  actions: read
+
+jobs:
+  m010-th11-b:
+    name: M010 / TH11 / B
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SAMPLE_ID: M010
+      MODEL_ID: openai/gpt-4.1-mini
+      OUTPUT_DIR: output
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install PDF text extractor
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+
+      - name: Run hash-locked sample
+        working-directory: experiments/090-item
+        run: python3 run_sample.py
+
+      - name: List evidence
+        if: always()
+        working-directory: experiments/090-item
+        run: |
+          find output -maxdepth 2 -type f -print -exec sha256sum {} \; || true
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 090-item-smoke-M010
+          path: experiments/090-item/output/
+          if-no-files-found: warn
+          retention-days: 30
