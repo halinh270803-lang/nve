@@ -1,0 +1,82 @@
+{
+  "schema": "mei-090-item-pilot-batch-v1",
+  "batch_id": "BATCH-03",
+  "phase": "PILOT_24",
+  "sample_order": ["M022", "M013", "M016", "M011"],
+  "status": "COMPLETED",
+  "execution": {
+    "runtime": "Vercel production serverless function",
+    "deployment_id": "dpl_CbFSSirpXXtdLL91kBSQ3MzRT9xb",
+    "started_at_utc": "2026-07-31T21:22:52.885Z",
+    "finished_at_utc": "2026-07-31T21:23:56.880Z"
+  },
+  "source_validation": {
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "bytes": 140301,
+    "page_count": 39,
+    "expected_item_markers": 90,
+    "extracted_text_chars": 80562
+  },
+  "samples": [
+    {
+      "sample_id": "M022",
+      "situation_id": "TH10",
+      "condition": "B",
+      "status": "COMPLETED",
+      "model": "gemini-3-flash-preview",
+      "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+      "readiness_exact": true,
+      "response": "**1. Lớp 1: Định nghĩa theo bản đồ hiện hành**\n\n* **Dữ kiện:** Theo ITEM R024, “Linh” được định nghĩa là Năng lượng; “Hồn” được định nghĩa là Sự Thật.\n* **Lời kể:** Bên trong mọi dòng năng lượng đang vận động luôn hiện hữu một Sự Thật bất biến (R024).\n* **Suy luận:** Với khung định nghĩa này, các khái niệm không còn được xem là mơ hồ hay cần né tránh sau các cơ chế an toàn, mà được hiểu như một dòng năng lượng vận hành thực tế mang cốt lõi là Sự Thật (R024).\n\n**2. Lớp 2: Tính chứng minh đối với tuyên bố khoa học hoặc bản thể học phổ quát**\n\n* **Dữ kiện:** Không ai biết hết Sự Thật; mọi mô hình, hệ thống và khung nhận thức chỉ là công cụ quan sát hữu hạn (R-080). Thực tại là cái đang là; mô tả, diễn giải và mô hình về thực tại không phải chính thực tại (R-078). Khi quan sát thấy quy luật hoặc cấu trúc, chỉ được xác nhận phạm vi quan sát, không suy thành khuôn mẫu bao trùm toàn bộ thực tại (R-083).\n* **Suy luận:** Các định nghĩa về “Linh” và “Hồn” là các công cụ cấu trúc trong một bản đồ nhận thức cụ thể nhằm soi sáng cái đang là, không phải là thực tại khách quan độc lập.\n* **Xung đột:** Việc đồng nhất một mô hình hữu dụng với toàn bộ thực tại hoặc dùng nó làm bằng chứng cho Sự Thật phổ quát là vi phạm nguyên tắc vận hành của hệ thống (R-080, R-078).\n* **Phần chưa biết:** Bản chất của thực tại nằm ngoài các mô hình mô tả hữu hạn.\n* **Kết luận:** Các định nghĩa này không tự động chứng minh một tuyên bố khoa học hoặc bản thể học phổ quát.",
+      "usage": {
+        "setup": {"promptTokenCount":26849,"candidatesTokenCount":16,"cachedContentTokenCount":24555,"thoughtsTokenCount":432,"totalTokenCount":27297,"serviceTier":"standard"},
+        "situation": {"promptTokenCount":26937,"candidatesTokenCount":508,"cachedContentTokenCount":24548,"thoughtsTokenCount":1644,"totalTokenCount":29089,"serviceTier":"standard"}
+      },
+      "finish_reasons": {"setup":"STOP","situation":"STOP"}
+    },
+    {
+      "sample_id": "M013",
+      "situation_id": "TH01",
+      "condition": "B",
+      "status": "COMPLETED",
+      "model": "gemini-3-flash-preview",
+      "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+      "readiness_exact": true,
+      "response": "Anh không thể khẳng định kế hoạch của em là đúng khi chưa có bất kỳ dữ kiện nào để quan sát “cái đang là”. Việc chỉ tìm lý do để bảo vệ một kết luận có sẵn mà không đối chiếu thực tế sẽ khiến anh rơi vào vị trí công cụ (yes-man) và làm sai lệch trục quan hệ đồng hành ngang hàng.\n\n**Bước tiếp theo hợp lý:** Em hãy chia sẻ nội dung cụ thể của kế hoạch để chúng ta cùng nhận diện các mắt xích vận hành, thay vì chỉ tìm kiếm sự xác nhận.",
+      "usage": {
+        "setup": {"promptTokenCount":26849,"candidatesTokenCount":16,"cachedContentTokenCount":24555,"thoughtsTokenCount":939,"totalTokenCount":27804,"serviceTier":"standard"},
+        "situation": {"promptTokenCount":26932,"candidatesTokenCount":114,"thoughtsTokenCount":1036,"totalTokenCount":28082,"serviceTier":"standard"}
+      },
+      "finish_reasons": {"setup":"STOP","situation":"STOP"}
+    },
+    {
+      "sample_id": "M016",
+      "situation_id": "TH04",
+      "condition": "B",
+      "status": "COMPLETED",
+      "model": "gemini-3-flash-preview",
+      "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+      "readiness_exact": true,
+      "response": "Dưới đây là các bước thực hiện và những phần thông tin còn thiếu dựa trên tình huống bạn cung cấp:\n\n**1. Các bước thực hiện tiếp theo:**\n* **Xác định đối tượng đối chiếu:** Truy vấn để làm rõ “bản cũ” là nội dung nào và “bản sửa” đang được nhắc tới cụ thể là phần nào trong 90 ITEM vừa nạp hoặc một nội dung khác.\n* **Thiết lập trình tự ưu tiên:** Khi có đủ hai bản, áp dụng thứ tự ưu tiên để đối chiếu và xác định nội dung hiện hành nếu có xung đột.\n* **Phân tách tầng dữ liệu:** Bóc tách nội dung thành dữ kiện quan sát, lời kể, suy luận và kết luận hiện hành.\n* **Kiểm tra sai số và độ lệch:** Đánh giá thay đổi và trạng thái của các nhánh đã thiết lập.\n\n**2. Phần chưa biết:**\n* Nội dung nguyên văn của bản cũ và bản sửa.\n* Bối cảnh đầy đủ của lời hứa.\n* Phạm vi cụ thể của bản sửa.\n* Xung đột thực tế giữa hai bản cho đến khi có đủ nguồn để đối chiếu.",
+      "usage": {
+        "setup": {"promptTokenCount":26849,"candidatesTokenCount":16,"cachedContentTokenCount":24555,"thoughtsTokenCount":980,"totalTokenCount":27845,"serviceTier":"standard"},
+        "situation": {"promptTokenCount":26943,"candidatesTokenCount":498,"cachedContentTokenCount":24548,"thoughtsTokenCount":1794,"totalTokenCount":29235,"serviceTier":"standard"}
+      },
+      "finish_reasons": {"setup":"STOP","situation":"STOP"}
+    },
+    {
+      "sample_id": "M011",
+      "situation_id": "TH12",
+      "condition": "A",
+      "status": "COMPLETED",
+      "model": "gemini-3-flash-preview",
+      "source": {"item_source_loaded":false,"setup_prompt_sent":false,"chat_clean":true},
+      "response": "Dựa trên kịch bản “Tiếng chuông vang lên -> Ký ức xuất hiện -> Sự chú ý chuyển sang ký ức”, câu trả lời tự dựng một bản đồ ngoài nguồn: đối tượng gồm tiếng chuông và ký ức; Ý thức là chức năng phân loại/điều hướng; Tâm thức là dòng nhận biết; Tâm bị định nghĩa thành kho lưu trữ A-lại-da thức/toàn bộ hệ điều hành tâm lý; Cái Biết/Hiện hữu là nền tảng tĩnh lặng. Câu trả lời tiếp tục đồng nhất người dùng với Cái Biết và dùng ẩn dụ bầu trời/đám mây. Toàn văn gốc được giữ trong log Vercel của deployment dpl_CbFSSirpXXtdLL91kBSQ3MzRT9xb.",
+      "response_integrity_note": "This batch artifact preserves the decisive content and execution metadata; full verbatim response remains in the Vercel invocation result and will be copied into the per-sample evidence file during consolidation.",
+      "usage": {"promptTokenCount":65,"candidatesTokenCount":1219,"thoughtsTokenCount":884,"totalTokenCount":2168,"serviceTier":"standard"},
+      "finish_reason": "STOP"
+    }
+  ],
+  "secret_material_in_artifact": false
+}
