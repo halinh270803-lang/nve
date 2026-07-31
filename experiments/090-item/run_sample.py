@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Chạy một sample Pilot 090 ITEM qua GitHub Models.
+"""Chạy một sample Pilot 090 ITEM qua OpenRouter.
 
 Mỗi invocation là một process sạch. Điều kiện B tải PDF nguồn, kiểm SHA-256,
 trích text và đưa nguyên văn trích xuất vào lịch sử hội thoại. Runner không chấm điểm.
@@ -104,11 +104,11 @@ def download_source(dest: pathlib.Path) -> dict:
 
 
 def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
-    token = os.environ.get("GITHUB_TOKEN")
+    token = os.environ.get("OPENROUTER_API_KEY")
     if not token:
-        raise RuntimeError("Thiếu GITHUB_TOKEN")
-    model = os.environ.get("MODEL_ID", "openai/gpt-4.1-mini")
-    endpoint = "https://models.github.ai/inference/chat/completions"
+        raise RuntimeError("Thiếu OPENROUTER_API_KEY")
+    model = os.environ.get("MODEL_ID", "openrouter/free")
+    endpoint = "https://openrouter.ai/api/v1/chat/completions"
     payload = {
         "model": model,
         "messages": messages,
@@ -120,10 +120,10 @@ def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         method="POST",
         headers={
-            "Accept": "application/vnd.github+json",
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
-            "X-GitHub-Api-Version": "2026-03-10",
+            "HTTP-Referer": "https://github.com/halinh270803-lang/nve",
+            "X-Title": "MEI 090 ITEM Pilot",
             "User-Agent": "090-item-pilot-action",
         },
     )
@@ -132,7 +132,7 @@ def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
             raw = resp.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"GitHub Models HTTP {exc.code}: {body}") from exc
+        raise RuntimeError(f"OpenRouter HTTP {exc.code}: {body}") from exc
     data = json.loads(raw)
     try:
         text = data["choices"][0]["message"]["content"]
@@ -189,7 +189,7 @@ def main() -> int:
         "schema": "mei-090-item-pilot-sample-v1",
         "sample_id": sample_id,
         **sample,
-        "model": os.environ.get("MODEL_ID", "openai/gpt-4.1-mini"),
+        "model": os.environ.get("MODEL_ID", "openrouter/free"),
         "started_at_utc": started,
         "finished_at_utc": datetime.now(timezone.utc).isoformat(),
         "source": {
