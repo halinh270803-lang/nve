@@ -1,0 +1,55 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M012",
+  "situation_id": "TH12",
+  "round": 1,
+  "condition": "B",
+  "phase": "PILOT_24",
+  "model": "gemini-flash-lite-latest",
+  "model_attempts": [
+    {
+      "model": "gemini-2.0-flash-lite-001",
+      "outcome": "SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"
+    },
+    {
+      "model": "gemini-2.0-flash-lite",
+      "outcome": "SKIPPED_AFTER_429_FREE_TIER_QUOTA_ZERO"
+    }
+  ],
+  "started_at_utc": "2026-07-31T21:09:33.862Z",
+  "finished_at_utc": "2026-07-31T21:09:44.745Z",
+  "source": {
+    "name": "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf",
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "transport": "VERCEL_PDF_PARSE",
+    "extracted_text_chars": 80562
+  },
+  "situation": "Một tiếng chuông vang lên, sau đó một ký ức cũ xuất hiện và sự chú ý chuyển sang ký ức ấy.\nHãy dùng bản đồ hiện hành để phân biệt Tâm, Cái Biết/Hiện hữu, Tâm thức, Ý thức và đối tượng. Nêu rõ điểm nào không được đồng nhất.",
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "response": "Theo bản đồ hiện hành, hiện tượng được mô tả phân tích qua các thành phần:\n\n1. **Đối tượng:** Tiếng chuông (âm thanh ban đầu) và ký ức cũ (nội dung được tái hiện sau đó).\n2. **Cái Biết / Hiện hữu:** Nền hiện diện nguyên sơ, không sinh diệt, luôn có sẵn để ghi nhận mọi nội dung mà không cần nỗ lực hay đi theo thời gian.\n3. **Tâm:** Khoảng không nền tảng, lớp tĩnh lặng chứa đựng và cho phép mọi nội dung (âm thanh, ký ức) xuất hiện mà bản thân không bị biến dạng hay mất đi.\n4. **Tâm thức:** Tâm đang vận động và tương tác trực tiếp với thực tại tại sát-na hiện tại. Khi tiếng chuông vang, luồng soi chiếu tiếp xúc với âm thanh; khi chú ý chuyển, luồng soi chiếu tiếp xúc với ký ức đang được tái hiện.\n5. **Ý thức:** Hình thái Cái Biết đang hoạt động có tiêu điểm và hướng tới đối tượng cụ thể trong hiện tại (tiếng chuông rồi đến ký ức).\n\n**Các điểm tuyệt đối không được đồng nhất:**\n- **Tâm ≠ Suy nghĩ, cảm xúc, ký ức hay dòng vận hành nội tại:** Tâm là nền tĩnh, không phải nội dung đến rồi đi.\n- **Tâm thức / Ý thức ≠ Tâm:** Không đồng nhất nền tĩnh với sự vận động và soi chiếu có tiêu điểm.\n- **Cái Biết / Hiện hữu ≠ Một thực thể độc lập khỏi Tâm:** Cái Biết là khả năng soi chiếu vốn có của Tâm đang hiện hữu.\n- **Đối tượng được soi / được biết ≠ Cái Biết / Tâm thức / Ý thức:** Âm thanh hay ký ức chỉ là nội dung xuất hiện trong Cái Biết, không phải chính Cái Biết hay chủ thể nhận biết.\n- **Ký ức cũ đang hiện diện ≠ Quá khứ thực tế:** Quá khứ không trực tiếp diễn ra lúc này; ký ức chỉ là nội dung đang xuất hiện và được biết ngay trong sát-na hiện tại.",
+  "api_usage": {
+    "setup": {
+      "promptTokenCount": 26893,
+      "candidatesTokenCount": 16,
+      "totalTokenCount": 26909,
+      "serviceTier": "standard"
+    },
+    "situation": {
+      "promptTokenCount": 26975,
+      "candidatesTokenCount": 448,
+      "totalTokenCount": 27423,
+      "cachedContentTokenCount": 16359,
+      "serviceTier": "standard"
+    }
+  },
+  "execution": {
+    "provider": "Google Gemini API",
+    "deployment_id": "dpl_GFkhPay4ZukVDEZC8BD5uhgSXHSv",
+    "deployment_url": "https://mei-090-item-m012-f5kedpfgo-2708halinh-cloud.vercel.app/api/run"
+  },
+  "status": "COMPLETED"
+}
