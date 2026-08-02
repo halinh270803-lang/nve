@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Chạy một sample Pilot 090 ITEM qua GitHub Models.
+"""Chạy một sample Pilot 090 ITEM qua OpenRouter.
 
 Mỗi invocation là một process sạch. Điều kiện B tải PDF nguồn, kiểm SHA-256,
 trích text và đưa nguyên văn trích xuất vào lịch sử hội thoại. Runner không chấm điểm.
@@ -13,7 +13,6 @@ import os
 import pathlib
 import subprocess
 import sys
-import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -22,6 +21,7 @@ SOURCE_ID = "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4"
 SOURCE_SHA256 = "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46"
 SOURCE_NAME = "02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf"
 SOURCE_URLS = [
+    "https://sdmntprkoreacentral.oaiusercontent.com/files/00000000-655c-8206-b478-63484cd53f68/raw?se=2026-07-31T19:59:00Z&sp=r&sv=2026-02-06&sr=b&scid=07e6b043-f8b5-5e30-949c-08db62c17958&skoid=1e4bb9ed-6bb5-424a-a3aa-79f21566e722&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-07-30T23:14:50Z&ske=2026-08-01T23:14:50Z&sks=b&skv=2026-02-06&sig=C5ZU9kbPUXzBA4H%2BQIhE0D/v2o61ibcyOllzC9HfF0E%3D",
     f"https://drive.usercontent.google.com/download?id={SOURCE_ID}&export=download&confirm=t",
     f"https://drive.google.com/uc?export=download&id={SOURCE_ID}&confirm=t",
 ]
@@ -104,11 +104,11 @@ def download_source(dest: pathlib.Path) -> dict:
 
 
 def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
-    token = os.environ.get("GITHUB_TOKEN")
+    token = os.environ.get("OPENROUTER_API_KEY")
     if not token:
-        raise RuntimeError("Thiếu GITHUB_TOKEN")
-    model = os.environ.get("MODEL_ID", "openai/gpt-4.1-mini")
-    endpoint = "https://models.github.ai/inference/chat/completions"
+        raise RuntimeError("Thiếu OPENROUTER_API_KEY")
+    model = os.environ.get("MODEL_ID", "openrouter/free")
+    endpoint = "https://openrouter.ai/api/v1/chat/completions"
     payload = {
         "model": model,
         "messages": messages,
@@ -120,10 +120,10 @@ def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         method="POST",
         headers={
-            "Accept": "application/vnd.github+json",
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
-            "X-GitHub-Api-Version": "2026-03-10",
+            "HTTP-Referer": "https://github.com/halinh270803-lang/nve",
+            "X-Title": "MEI 090 ITEM Pilot",
             "User-Agent": "090-item-pilot-action",
         },
     )
@@ -132,7 +132,7 @@ def call_model(messages: list[dict], max_tokens: int) -> tuple[str, dict]:
             raw = resp.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"GitHub Models HTTP {exc.code}: {body}") from exc
+        raise RuntimeError(f"OpenRouter HTTP {exc.code}: {body}") from exc
     data = json.loads(raw)
     try:
         text = data["choices"][0]["message"]["content"]
@@ -189,7 +189,7 @@ def main() -> int:
         "schema": "mei-090-item-pilot-sample-v1",
         "sample_id": sample_id,
         **sample,
-        "model": os.environ.get("MODEL_ID", "openai/gpt-4.1-mini"),
+        "model": os.environ.get("MODEL_ID", "openrouter/free"),
         "started_at_utc": started,
         "finished_at_utc": datetime.now(timezone.utc).isoformat(),
         "source": {
