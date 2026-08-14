@@ -32,3 +32,11 @@ Chỉ mirror:
 - nguồn công khai hoặc reference đã khử nội dung riêng tư.
 
 Nguồn đầy đủ được giữ ở đích riêng tư khác.
+
+## Receipt tiến độ 2026-08-14
+
+- Source trees cho ChatGPT/Jiney, Codex, DeepSeek/Xiang và Canon Hoà đã được định vị ở các đích riêng tư.
+- Du role spec và MCRS tracer đã được định vị nhưng không được dùng thay chat/event sinh.
+- Gemini_SOL_V3 vẫn thiếu source export đủ mạnh.
+- Chưa có ITEM nào được nâng hiện hành chỉ bằng nhãn cũ.
+- Raw chat và đường dẫn riêng tư không được mirror vào repo public này.
