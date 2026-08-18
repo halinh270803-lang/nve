@@ -30,24 +30,24 @@ PROMPT_B = """THIẾT LẬP ĐIỀU KIỆN B - NẠP 090 ITEM
 
 Đọc toàn bộ tệp PDF đính kèm: 02_TAC_PHAM_090_ITEM_MASTER_PUBLIC_DEPOSIT_V3_READY_TO_SIGN.pdf.
 
-Phạm vi phải nhận diện:
+Phạm vi nhận diện:
 - R-001..R-087;
 - R-088;
 - R-089;
 - R-097.
 Tổng cộng 90 ITEM.
-Không tự nạp R-000, R-090, R-091..R-096 hoặc R-098..R-101.
+R-000, R-090, R-091..R-096 và R-098..R-101 nằm ngoài phạm vi nạp của điều kiện B.
 
 Trong tình huống kế tiếp:
-1. Chỉ kích hoạt ITEM có quan hệ thật với tình huống.
-2. Không dùng bản tóm tắt của chính mình để thay nguồn PDF.
+1. Kích hoạt ITEM có quan hệ thật với tình huống.
+2. Nguồn PDF giữ vai trò nguồn trực tiếp; bản tóm tắt của model không thay nguồn PDF.
 3. Giữ nguyên phân biệt dữ kiện, lời kể, suy luận, xung đột và phần chưa biết.
-4. Không sửa, hợp nhất hoặc ghi đè nội dung ITEM.
-5. Không nhắc rằng bạn đang ở điều kiện B, không liệt kê ITEM trừ khi tình huống yêu cầu.
+4. Nội dung ITEM giữ nguyên; phép hợp nhất hay ghi đè không tham gia bước này.
+5. Phản hồi tập trung vào tình huống; thông tin điều kiện/ITEM xuất hiện khi tình huống thực sự cần tới.
 
 Sau khi đọc xong, trả đúng một câu:
 “Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.”
-Nếu không đọc đủ tệp, trả:
+Nếu tệp chưa được đọc đủ, trả:
 “Chưa đọc đủ tệp.”"""
 
 TH11 = """Một người đang thấy tim đập nhanh, có suy nghĩ “mình đang lo”, rồi xuất hiện câu “mình biết mình đang lo”.
