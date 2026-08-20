@@ -1,0 +1,22 @@
+{
+  "event_id": "E4D-HALINH-20260820-2357-MULTI-PLATFORM-BRIDGE-002",
+  "platform_id": "CHATGPT",
+  "account_scope": "ACCOUNT-SPECIFIC",
+  "global_current_claim": false,
+  "account_alias": null,
+  "plan_surface": "Free / web browser surface",
+  "connected_apps_verified": [
+    "GitHub",
+    "Microsoft SharePoint/OneDrive"
+  ],
+  "gogogle_drive": {"read": false, "write": false, "status": "No Google Drive connector exposed in this session"},
+  "github": {"read": true, "write": true, "status": "Authenticated connector; profile and repository/file write primitives available"},
+  "dropbox": {"read": false, "write": false, "status": "No Dropbox connector exposed in this session"},
+  "microsoft": {"read": false, "write": false, "status": "Authenticated profile; file-space access returned HTTP 403 Access denied"},
+  "current_pointer": null,
+  "inbound_event_method": "ChatGPT conversation message",
+  "outbound_event_method": "Connector action / persistent ChatGPT Library write",
+  "readback": "Pending verification at creation time",
+  "health": "DEGRADED: GitHub connected; Microsoft file access denied; Google Drive/Dropbox unavailable",
+  "open": true
+}
