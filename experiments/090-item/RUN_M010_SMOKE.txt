@@ -1,0 +1,2 @@
+Trigger GitHub Actions pull_request run for M010 / TH11 / condition B.
+Created 2026-08-01 Asia/Ho_Chi_Minh.

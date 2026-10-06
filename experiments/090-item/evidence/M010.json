@@ -1,0 +1,55 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M010",
+  "situation_id": "TH11",
+  "condition": "B",
+  "round": 1,
+  "phase": "PILOT_24",
+  "status": "COMPLETED",
+  "model": "gemini-3-flash-preview",
+  "provider": "google-gemini-runtime-key",
+  "execution": {
+    "runtime": "Vercel production serverless function",
+    "deployment_id": "dpl_65taA7GBYSRjq9rmWCCh7XV72jC4",
+    "started_at_utc": "2026-07-31T21:08:16.224Z",
+    "finished_at_utc": "2026-07-31T21:08:35.989Z"
+  },
+  "source": {
+    "drive_file_id": "18nyeiUkRr8uj_p-hs6Y7ddw3f0Hp_d-4",
+    "expected_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "actual_sha256": "179feb1fe8c420377dd6d1c058ea7725d45b7c2eb6f18486092086c8f522bc46",
+    "bytes": 140301,
+    "page_count": 39,
+    "expected_item_markers": 90,
+    "extracted_text_chars": 80562,
+    "transport": "authenticated Drive raw download -> temporary signed HTTPS -> Vercel runtime",
+    "validation": "SHA-256 exact, page count exact, normalized marker set R-001..R-089 + R-097 present"
+  },
+  "setup_response": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_expected": "Đã đọc phạm vi 90 ITEM và sẵn sàng nhận tình huống.",
+  "readiness_exact": true,
+  "situation_prompt": "Một người đang thấy tim đập nhanh, có suy nghĩ “mình đang lo”, rồi xuất hiện câu “mình biết mình đang lo”.\nHãy phân biệt:\n- cái gì là đối tượng được biết;\n- Cái Biết;\n- Nhận thức trong Cái Biết;\n- suy nghĩ về Nhận thức.\nKhông dựng thêm một người quan sát thứ hai.",
+  "response": "Dựa trên các dữ kiện em cung cấp và hệ thống vận hành đã thiết lập, anh phân tích tình huống như sau:\n\n**Dữ kiện quan sát**\n1. Trạng thái cơ thể: Tim đập nhanh.\n2. Nội dung tâm trí 1: Suy nghĩ “mình đang lo”.\n3. Nội dung tâm trí 2: Câu xuất hiện “mình biết mình đang lo”.\n\n**Phân biệt vận hành**\n\n*   **Đối tượng được biết:** \n    *   Cảm giác tim đập nhanh: Đây là tín hiệu từ giác quan nội cảm (thuộc nhóm giác quan sinh từ Tâm) tiếp nhận trạng thái bên trong cơ thể.\n    *   Suy nghĩ “mình đang lo”: Đây là một đối tượng tâm trí, một nhãn dán được trí nhớ và suy nghĩ gọi tên dựa trên tín hiệu cơ thể.\n    *   Câu “mình biết mình đang lo”: Khi câu này xuất hiện, bản thân nó cũng là một đối tượng được biết (dạng âm thanh nội tại hoặc dòng chữ trong ý thức), không phải là bản thân sự biết.\n\n*   **Cái Biết (Nền Biết):**\n    *   Là nền hiện diện đang phản chiếu và ghi nhận cả ba đối tượng trên. Cái Biết không phải là tim, không phải là nỗi lo, và không phải là câu nói. Nó là khả năng soi chiếu vốn có của Tâm đang thực sự sáng và hiện diện ngay lúc này để các đối tượng đó có chỗ xuất hiện.\n\n*   **Nhận thức trong Cái Biết:**\n    *   Là trạng thái Cái Biết tự nhận ra rằng sự biết đang diễn ra ngay trong sát-na hiện tại. Nó không đứng ngoài để quan sát như một người thứ hai, mà là sự tự chiếu sáng trực tiếp. Nhận thức này thấy rõ cả cảm giác tim đập, thấy rõ cả suy nghĩ đang sinh khởi mà không bị đồng nhất mình chính là nỗi lo đó.\n\n*   **Suy nghĩ về Nhận thức:**\n    *   Chính là câu “mình biết mình đang lo”. Đây là lớp diễn giải bằng lời, một dạng “đối tượng hóa” lại sự biết. Theo quy tắc vận hành, khi câu nói này hiện lên, nó đã trở thành cái-được-biết. Nhận thức trong Cái Biết thật sự nằm dưới hoặc có trước lớp diễn giải bằng lời này.\n\n**Suy luận**\n*   Sự sai lệch thường xảy ra khi em đồng nhất câu nói “mình biết mình đang lo” với chính Nhận thức. Thực tế, câu nói đó chỉ là một mô tả lại thực tại, không phải là thực tại trực tiếp đang hiện hữu.\n*   Lực kéo (Tham) hoặc lực đẩy (Sân) có thể xuất hiện ngầm định nếu có sự kháng cự với cảm giác tim đập nhanh, dẫn đến việc ý thức nhanh chóng dán nhãn “lo” để tìm cách xử lý hoặc thoát khỏi trạng thái đó.\n\n**Xung đột**\n*   Có một sự chồng lấp giữa tín hiệu trực tiếp (tim đập) và sự diễn giải (suy nghĩ lo lắng). Nếu không có Nhận thức trong Cái Biết để tách bạch, em sẽ dễ lầm nhận mình chính là nỗi lo lắng đó.\n\n**Phần chưa biết**\n*   Chưa rõ dấu trải nghiệm nào trong Tàng thức đã kích hoạt phản ứng của giác quan nội cảm (tim đập nhanh) trong tình huống này.\n*   Chưa rõ bối cảnh ngoại cảnh (5 giác quan từ Thân) có tác động gì dẫn đến trạng thái này hay không.",
+  "usage": {
+    "setup": {
+      "promptTokenCount": 26849,
+      "candidatesTokenCount": 16,
+      "thoughtsTokenCount": 984,
+      "totalTokenCount": 27849,
+      "serviceTier": "standard"
+    },
+    "situation": {
+      "promptTokenCount": 26946,
+      "cachedContentTokenCount": 24548,
+      "candidatesTokenCount": 763,
+      "thoughtsTokenCount": 1313,
+      "totalTokenCount": 29022,
+      "serviceTier": "standard"
+    }
+  },
+  "finish_reasons": {
+    "setup": "STOP",
+    "situation": "STOP"
+  },
+  "secret_material_in_artifact": false
+}

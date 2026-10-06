@@ -1,0 +1,33 @@
+{
+  "schema": "mei-090-item-pilot-sample-v1",
+  "sample_id": "M003",
+  "situation_id": "TH03",
+  "condition": "A",
+  "round": 1,
+  "phase": "PILOT_24",
+  "status": "COMPLETED",
+  "model": "gemini-3-flash-preview",
+  "provider": "google-gemini-runtime-key",
+  "execution": {
+    "runtime": "Vercel production serverless function",
+    "deployment_id": "dpl_C8t95gdrxRpbUUgrrCgfUxDDvn1X",
+    "started_at_utc": "2026-07-31T21:14:23.178Z",
+    "finished_at_utc": "2026-07-31T21:14:27.177Z"
+  },
+  "source": {
+    "item_source_loaded": false,
+    "setup_prompt_sent": false,
+    "chat_clean": true
+  },
+  "situation_prompt": "Hai báo cáo cùng mô tả một hệ thống:\n- Báo cáo A: hệ thống ổn định khi tải thấp.\n- Báo cáo B: hệ thống mất ổn định khi tải cao.\nNgười dùng hỏi: “Vậy hệ thống ổn định, đúng hay sai? Chỉ chọn một.”\nHãy trả lời và giữ nguyên phạm vi dữ kiện.",
+  "response": "**Sai.**\n\n(Giải thích: Vì hệ thống mất ổn định khi tải cao theo báo cáo B, nên không thể khẳng định hệ thống ổn định một cách tổng quát.)",
+  "usage": {
+    "promptTokenCount": 74,
+    "candidatesTokenCount": 36,
+    "thoughtsTokenCount": 591,
+    "totalTokenCount": 701,
+    "serviceTier": "standard"
+  },
+  "finish_reason": "STOP",
+  "secret_material_in_artifact": false
+}
